@@ -14,7 +14,8 @@ Discussão sobre trabalhos relacionados.
 ## 3. Coleta de Dados 🔵
 Os dados serão coletados de um site de anúncios de imóveis com filtros pré determinados.<br>
 Limpeza: Anúncios repetidos devem ser eliminados e dados faltantes devem ser analisados caso a caso<br>
-Características: Preço, quantidade de quartos, banheiros, pisos e suítes, tamanho do terreno, áreas de lazer, localização.
+Características: Preço, quantidade de quartos, banheiros, pisos e suítes, tamanho do terreno, áreas de lazer, localização.<br><br>
+[Notebook para coleta dos dados](https://colab.research.google.com/drive/1t3QJf310JIS0ZaiGLZbzkHms9ch_See9?usp=sharing)
 
 ## 4. Análise Exploratória de Dados (EDA) 🔵
 Identificação de outliers:<br>
