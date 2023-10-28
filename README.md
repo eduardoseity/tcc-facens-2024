@@ -1,12 +1,11 @@
 # "Análise de Dados Aplicada ao Mercado Imobiliário: Estratégias de Precificação e Previsão de Preços"
 
 ## 1. Introdução
+<pre>
 Contextualização do mercado imobiliário.
-
 Relevância da análise de dados e da Ciência de Dados no setor imobiliário.
-
 Objetivos do estudo.
-
+</pre>
 ## 2. Revisão Bibliográfica
 Conceitos fundamentais de Ciência de Dados e sua aplicação no mercado imobiliário.
 
