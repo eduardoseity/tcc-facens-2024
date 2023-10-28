@@ -1,11 +1,9 @@
 # "Análise de Dados Aplicada ao Mercado Imobiliário: Estratégias de Precificação e Previsão de Preços"
 
-## 1. Introdução
-<pre>
-Contextualização do mercado imobiliário.
-Relevância da análise de dados e da Ciência de Dados no setor imobiliário.
-Objetivos do estudo.
-</pre>
+## 1. Introdução 🔵
+Trabalho de Conclusão de Curso de Pós Graduação em Ciência de Dados<br>
+O objetivo deste trabalho é coletar e analisar dados imobiliários para gerar insights para este mercado utilizando modelos para estimar o preço de um imóvel e prever sua valorização ao longo do tempo
+
 ## 2. Revisão Bibliográfica
 Conceitos fundamentais de Ciência de Dados e sua aplicação no mercado imobiliário.
 
@@ -13,19 +11,16 @@ Revisão de literatura sobre técnicas de análise de dados em imóveis.
 
 Discussão sobre trabalhos relacionados.
 
-## 3. Coleta de Dados
-Fontes de dados: Onde obter os dados imobiliários?
+## 3. Coleta de Dados 🔵
+Os dados serão coletados de um site de anúncios de imóveis com filtros pré determinados.<br>
+Limpeza: Anúncios repetidos devem ser eliminados e dados faltantes devem ser analisados caso a caso<br>
+Características: Preço, quantidade de quartos, banheiros, pisos e suítes, tamanho do terreno, áreas de lazer, localização.
 
-Processo de coleta, pré-processamento e limpeza de dados.
-
-Descrição das variáveis e atributos relevantes.
-
-## 4. Análise Exploratória de Dados (EDA)
-Visualização de dados para identificar tendências e padrões.
-
-Estatísticas descritivas.
-
-Análise de outliers e valores ausentes.
+## 4. Análise Exploratória de Dados (EDA) 🔵
+Identificação de outliers:<br>
+... Descrever como trataremos outliers ...<br>
+Dados faltantes:<br>
+... Descrever como trataremos os dados faltantes de cada característica ...<br>
 
 ## 5. Modelagem de Precificação
 Desenvolvimento de um modelo de precificação de imóveis.
