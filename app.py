@@ -51,3 +51,6 @@ def predict():
     x_data['BARBECUE_GRILL'] = pd.to_numeric(x_data['BARBECUE_GRILL'])
     y_pred = predict_model(model,x_data)['prediction_label'].values[0]
     return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
+
+if __name__ == '__main__':
+    app.run()
