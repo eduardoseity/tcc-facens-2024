@@ -1,7 +1,7 @@
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <title>Teste</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
       var root = 'https://tcc-facens-2023.onrender.com'
     </script>
@@ -25,15 +25,15 @@
         });
       </script>
       Área total (m²)<br>
-      <input type="range" name="totalAreas" id="totalAreas" min="70" max="1000" step="5" value="70" oninput="this.nextElementSibling.value = this.value"><output>70</output><br>
+      <input type="range" name="totalAreas" id="totalAreas" min="70" max="1000" step="1" value="70" oninput="this.nextElementSibling.value = this.value"><output>70</output><br>
       Área útil (m²)<br>
-      <input type="range" name="usableAreas" id="usableAreas" min="70" max="1000" step="5" value="70" oninput="this.nextElementSibling.value = this.value"><output>70</output><br>
+      <input type="range" name="usableAreas" id="usableAreas" min="70" max="1000" step="1" value="70" oninput="this.nextElementSibling.value = this.value"><output>70</output><br>
       Vagas<br>
       <input type="range" name="parkingSpaces" id="parkingSpaces" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
       Banheiros<br>
       <input type="range" name="bathrooms" id="bathrooms" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
       Suítes<br>
-      <input type="range" name="suites" id="suites" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
+      <input type="range" name="suites" id="suites" min="0" max="5" value="0" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
       Quartos<br>
       <input type="range" name="bedrooms" id="bedrooms" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br><br>
       Bairro<br>
