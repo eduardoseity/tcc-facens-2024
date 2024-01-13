@@ -5,7 +5,7 @@ import os
 from pycaret.regression import *
 import locale
 
-locale.setlocale(locale.LC_MONETARY, 'pt_BR')
+locale.setlocale(locale.LC_MONETARY, 'pt_BR.UTF-8')
 
 app = Flask(__name__)
 
