@@ -2516,3 +2516,1204 @@ pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2024-01-13 15:55:32,490:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:01,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:01,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:01,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:01,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:03,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:03,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:03,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 16:59:03,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-13 17:07:31,834:INFO:Initializing load_model()
+2024-01-13 17:07:31,835:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:07:32,307:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:07:32,317:INFO:Initializing predict_model()
+2024-01-13 17:07:32,317:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x157236c20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1572931c0>)
+2024-01-13 17:07:32,317:INFO:Checking exceptions
+2024-01-13 17:07:32,317:INFO:Preloading libraries
+2024-01-13 17:07:32,317:INFO:Set up data.
+2024-01-13 17:07:32,323:INFO:Set up index.
+2024-01-13 17:07:36,272:INFO:Initializing load_model()
+2024-01-13 17:07:36,273:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:07:36,370:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:07:36,374:INFO:Initializing predict_model()
+2024-01-13 17:07:36,374:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728b3a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1570bd630>)
+2024-01-13 17:07:36,374:INFO:Checking exceptions
+2024-01-13 17:07:36,374:INFO:Preloading libraries
+2024-01-13 17:07:36,374:INFO:Set up data.
+2024-01-13 17:07:36,376:INFO:Set up index.
+2024-01-13 17:07:39,003:INFO:Initializing load_model()
+2024-01-13 17:07:39,003:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:07:39,091:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:07:39,095:INFO:Initializing predict_model()
+2024-01-13 17:07:39,095:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570a5ea0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1570bd480>)
+2024-01-13 17:07:39,095:INFO:Checking exceptions
+2024-01-13 17:07:39,095:INFO:Preloading libraries
+2024-01-13 17:07:39,095:INFO:Set up data.
+2024-01-13 17:07:39,097:INFO:Set up index.
+2024-01-13 17:08:35,299:INFO:Initializing load_model()
+2024-01-13 17:08:35,300:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:08:35,408:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:08:35,413:INFO:Initializing predict_model()
+2024-01-13 17:08:35,413:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x157236f80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1570bd630>)
+2024-01-13 17:08:35,413:INFO:Checking exceptions
+2024-01-13 17:08:35,413:INFO:Preloading libraries
+2024-01-13 17:08:35,413:INFO:Set up data.
+2024-01-13 17:08:35,416:INFO:Set up index.
+2024-01-13 17:11:57,752:INFO:Initializing load_model()
+2024-01-13 17:11:57,753:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:11:57,870:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:11:57,875:INFO:Initializing predict_model()
+2024-01-13 17:11:57,875:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570a6530>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1570bd630>)
+2024-01-13 17:11:57,875:INFO:Checking exceptions
+2024-01-13 17:11:57,875:INFO:Preloading libraries
+2024-01-13 17:11:57,875:INFO:Set up data.
+2024-01-13 17:11:57,877:INFO:Set up index.
+2024-01-13 17:12:06,191:INFO:Initializing load_model()
+2024-01-13 17:12:06,192:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:12:06,302:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:12:06,306:INFO:Initializing predict_model()
+2024-01-13 17:12:06,306:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f32b0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1572930a0>)
+2024-01-13 17:12:06,306:INFO:Checking exceptions
+2024-01-13 17:12:06,306:INFO:Preloading libraries
+2024-01-13 17:12:06,306:INFO:Set up data.
+2024-01-13 17:12:06,308:INFO:Set up index.
+2024-01-13 17:12:36,103:INFO:Initializing load_model()
+2024-01-13 17:12:36,104:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:12:36,184:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:12:50,219:INFO:Initializing load_model()
+2024-01-13 17:12:50,219:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:12:50,309:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:12:50,313:INFO:Initializing predict_model()
+2024-01-13 17:12:50,313:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f1870>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04310>)
+2024-01-13 17:12:50,313:INFO:Checking exceptions
+2024-01-13 17:12:50,313:INFO:Preloading libraries
+2024-01-13 17:12:50,314:INFO:Set up data.
+2024-01-13 17:12:50,316:INFO:Set up index.
+2024-01-13 17:16:38,154:INFO:Initializing load_model()
+2024-01-13 17:16:38,155:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:16:38,267:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:16:38,271:INFO:Initializing predict_model()
+2024-01-13 17:16:38,271:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728b5b0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a052d0>)
+2024-01-13 17:16:38,271:INFO:Checking exceptions
+2024-01-13 17:16:38,271:INFO:Preloading libraries
+2024-01-13 17:16:38,271:INFO:Set up data.
+2024-01-13 17:16:38,274:INFO:Set up index.
+2024-01-13 17:16:45,423:INFO:Initializing load_model()
+2024-01-13 17:16:45,423:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:16:45,507:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:16:45,511:INFO:Initializing predict_model()
+2024-01-13 17:16:45,511:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f1750>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05000>)
+2024-01-13 17:16:45,511:INFO:Checking exceptions
+2024-01-13 17:16:45,511:INFO:Preloading libraries
+2024-01-13 17:16:45,511:INFO:Set up data.
+2024-01-13 17:16:45,513:INFO:Set up index.
+2024-01-13 17:16:50,802:INFO:Initializing load_model()
+2024-01-13 17:16:50,802:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:16:50,889:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:16:50,894:INFO:Initializing predict_model()
+2024-01-13 17:16:50,894:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f2020>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04310>)
+2024-01-13 17:16:50,894:INFO:Checking exceptions
+2024-01-13 17:16:50,894:INFO:Preloading libraries
+2024-01-13 17:16:50,894:INFO:Set up data.
+2024-01-13 17:16:50,896:INFO:Set up index.
+2024-01-13 17:16:53,935:INFO:Initializing load_model()
+2024-01-13 17:16:53,935:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:16:54,016:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:16:54,020:INFO:Initializing predict_model()
+2024-01-13 17:16:54,020:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f1930>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04280>)
+2024-01-13 17:16:54,020:INFO:Checking exceptions
+2024-01-13 17:16:54,020:INFO:Preloading libraries
+2024-01-13 17:16:54,020:INFO:Set up data.
+2024-01-13 17:16:54,022:INFO:Set up index.
+2024-01-13 17:16:56,336:INFO:Initializing load_model()
+2024-01-13 17:16:56,336:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:16:56,425:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:16:56,429:INFO:Initializing predict_model()
+2024-01-13 17:16:56,429:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570a79a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04a60>)
+2024-01-13 17:16:56,429:INFO:Checking exceptions
+2024-01-13 17:16:56,429:INFO:Preloading libraries
+2024-01-13 17:16:56,429:INFO:Set up data.
+2024-01-13 17:16:56,431:INFO:Set up index.
+2024-01-13 17:17:34,070:INFO:Initializing load_model()
+2024-01-13 17:17:34,071:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:17:34,143:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:17:34,148:INFO:Initializing predict_model()
+2024-01-13 17:17:34,148:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f3880>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05240>)
+2024-01-13 17:17:34,148:INFO:Checking exceptions
+2024-01-13 17:17:34,148:INFO:Preloading libraries
+2024-01-13 17:17:34,149:INFO:Set up data.
+2024-01-13 17:17:34,151:INFO:Set up index.
+2024-01-13 17:17:38,817:INFO:Initializing load_model()
+2024-01-13 17:17:38,818:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:17:38,882:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:17:38,887:INFO:Initializing predict_model()
+2024-01-13 17:17:38,887:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f3fa0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a044c0>)
+2024-01-13 17:17:38,888:INFO:Checking exceptions
+2024-01-13 17:17:38,888:INFO:Preloading libraries
+2024-01-13 17:17:38,888:INFO:Set up data.
+2024-01-13 17:17:38,890:INFO:Set up index.
+2024-01-13 17:17:41,805:INFO:Initializing load_model()
+2024-01-13 17:17:41,805:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:17:41,875:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:17:41,881:INFO:Initializing predict_model()
+2024-01-13 17:17:41,881:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f24a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a040d0>)
+2024-01-13 17:17:41,881:INFO:Checking exceptions
+2024-01-13 17:17:41,881:INFO:Preloading libraries
+2024-01-13 17:17:41,882:INFO:Set up data.
+2024-01-13 17:17:41,884:INFO:Set up index.
+2024-01-13 17:19:58,076:INFO:Initializing load_model()
+2024-01-13 17:19:58,077:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:19:58,180:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:19:58,184:INFO:Initializing predict_model()
+2024-01-13 17:19:58,184:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728a1a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04430>)
+2024-01-13 17:19:58,184:INFO:Checking exceptions
+2024-01-13 17:19:58,184:INFO:Preloading libraries
+2024-01-13 17:19:58,184:INFO:Set up data.
+2024-01-13 17:19:58,187:INFO:Set up index.
+2024-01-13 17:20:03,025:INFO:Initializing load_model()
+2024-01-13 17:20:03,025:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:20:03,101:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:20:03,106:INFO:Initializing predict_model()
+2024-01-13 17:20:03,106:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f3760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04d30>)
+2024-01-13 17:20:03,106:INFO:Checking exceptions
+2024-01-13 17:20:03,106:INFO:Preloading libraries
+2024-01-13 17:20:03,106:INFO:Set up data.
+2024-01-13 17:20:03,108:INFO:Set up index.
+2024-01-13 17:20:05,685:INFO:Initializing load_model()
+2024-01-13 17:20:05,685:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:20:05,773:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:20:05,778:INFO:Initializing predict_model()
+2024-01-13 17:20:05,778:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766feb0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04160>)
+2024-01-13 17:20:05,778:INFO:Checking exceptions
+2024-01-13 17:20:05,778:INFO:Preloading libraries
+2024-01-13 17:20:05,778:INFO:Set up data.
+2024-01-13 17:20:05,780:INFO:Set up index.
+2024-01-13 17:52:49,804:INFO:Initializing load_model()
+2024-01-13 17:52:49,805:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:52:49,894:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:52:49,903:INFO:Initializing predict_model()
+2024-01-13 17:52:49,903:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1561634c0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05fc0>)
+2024-01-13 17:52:49,903:INFO:Checking exceptions
+2024-01-13 17:52:49,903:INFO:Preloading libraries
+2024-01-13 17:52:49,904:INFO:Set up data.
+2024-01-13 17:52:49,910:INFO:Set up index.
+2024-01-13 17:52:55,361:INFO:Initializing load_model()
+2024-01-13 17:52:55,361:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:52:55,459:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:52:55,464:INFO:Initializing predict_model()
+2024-01-13 17:52:55,464:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766ec50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05b40>)
+2024-01-13 17:52:55,464:INFO:Checking exceptions
+2024-01-13 17:52:55,464:INFO:Preloading libraries
+2024-01-13 17:52:55,464:INFO:Set up data.
+2024-01-13 17:52:55,467:INFO:Set up index.
+2024-01-13 17:53:01,425:INFO:Initializing load_model()
+2024-01-13 17:53:01,426:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:53:01,508:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:53:01,513:INFO:Initializing predict_model()
+2024-01-13 17:53:01,513:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766c3a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04310>)
+2024-01-13 17:53:01,513:INFO:Checking exceptions
+2024-01-13 17:53:01,513:INFO:Preloading libraries
+2024-01-13 17:53:01,513:INFO:Set up data.
+2024-01-13 17:53:01,516:INFO:Set up index.
+2024-01-13 17:53:03,726:INFO:Initializing load_model()
+2024-01-13 17:53:03,726:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:53:03,803:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:53:03,808:INFO:Initializing predict_model()
+2024-01-13 17:53:03,808:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766dcf0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05cf0>)
+2024-01-13 17:53:03,808:INFO:Checking exceptions
+2024-01-13 17:53:03,808:INFO:Preloading libraries
+2024-01-13 17:53:03,808:INFO:Set up data.
+2024-01-13 17:53:03,811:INFO:Set up index.
+2024-01-13 17:57:05,846:INFO:Initializing load_model()
+2024-01-13 17:57:05,847:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:05,962:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:05,968:INFO:Initializing predict_model()
+2024-01-13 17:57:05,968:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728ba90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a051b0>)
+2024-01-13 17:57:05,968:INFO:Checking exceptions
+2024-01-13 17:57:05,968:INFO:Preloading libraries
+2024-01-13 17:57:05,968:INFO:Set up data.
+2024-01-13 17:57:05,971:INFO:Set up index.
+2024-01-13 17:57:07,398:INFO:Initializing load_model()
+2024-01-13 17:57:07,398:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:07,492:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:07,498:INFO:Initializing predict_model()
+2024-01-13 17:57:07,498:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766e5f0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05ab0>)
+2024-01-13 17:57:07,498:INFO:Checking exceptions
+2024-01-13 17:57:07,498:INFO:Preloading libraries
+2024-01-13 17:57:07,498:INFO:Set up data.
+2024-01-13 17:57:07,501:INFO:Set up index.
+2024-01-13 17:57:08,297:INFO:Initializing load_model()
+2024-01-13 17:57:08,297:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:08,397:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:08,402:INFO:Initializing predict_model()
+2024-01-13 17:57:08,402:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766ecb0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a044c0>)
+2024-01-13 17:57:08,402:INFO:Checking exceptions
+2024-01-13 17:57:08,402:INFO:Preloading libraries
+2024-01-13 17:57:08,402:INFO:Set up data.
+2024-01-13 17:57:08,405:INFO:Set up index.
+2024-01-13 17:57:11,111:INFO:Initializing load_model()
+2024-01-13 17:57:11,111:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:11,205:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:11,211:INFO:Initializing predict_model()
+2024-01-13 17:57:11,211:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766e9e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05240>)
+2024-01-13 17:57:11,211:INFO:Checking exceptions
+2024-01-13 17:57:11,211:INFO:Preloading libraries
+2024-01-13 17:57:11,211:INFO:Set up data.
+2024-01-13 17:57:11,214:INFO:Set up index.
+2024-01-13 17:57:12,143:INFO:Initializing load_model()
+2024-01-13 17:57:12,143:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:12,230:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:12,236:INFO:Initializing predict_model()
+2024-01-13 17:57:12,236:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766cac0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04040>)
+2024-01-13 17:57:12,236:INFO:Checking exceptions
+2024-01-13 17:57:12,236:INFO:Preloading libraries
+2024-01-13 17:57:12,236:INFO:Set up data.
+2024-01-13 17:57:12,239:INFO:Set up index.
+2024-01-13 17:57:16,178:INFO:Initializing load_model()
+2024-01-13 17:57:16,179:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:16,274:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:16,280:INFO:Initializing predict_model()
+2024-01-13 17:57:16,280:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766f790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a044c0>)
+2024-01-13 17:57:16,280:INFO:Checking exceptions
+2024-01-13 17:57:16,280:INFO:Preloading libraries
+2024-01-13 17:57:16,280:INFO:Set up data.
+2024-01-13 17:57:16,283:INFO:Set up index.
+2024-01-13 17:57:36,064:INFO:Initializing load_model()
+2024-01-13 17:57:36,065:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:36,161:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:36,166:INFO:Initializing predict_model()
+2024-01-13 17:57:36,166:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766ed70>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04ee0>)
+2024-01-13 17:57:36,166:INFO:Checking exceptions
+2024-01-13 17:57:36,166:INFO:Preloading libraries
+2024-01-13 17:57:36,166:INFO:Set up data.
+2024-01-13 17:57:36,169:INFO:Set up index.
+2024-01-13 17:57:37,093:INFO:Initializing load_model()
+2024-01-13 17:57:37,093:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:37,190:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:37,195:INFO:Initializing predict_model()
+2024-01-13 17:57:37,195:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766cee0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05120>)
+2024-01-13 17:57:37,195:INFO:Checking exceptions
+2024-01-13 17:57:37,195:INFO:Preloading libraries
+2024-01-13 17:57:37,195:INFO:Set up data.
+2024-01-13 17:57:37,198:INFO:Set up index.
+2024-01-13 17:57:38,141:INFO:Initializing load_model()
+2024-01-13 17:57:38,141:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 17:57:38,235:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 17:57:38,240:INFO:Initializing predict_model()
+2024-01-13 17:57:38,240:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766fb50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05240>)
+2024-01-13 17:57:38,240:INFO:Checking exceptions
+2024-01-13 17:57:38,240:INFO:Preloading libraries
+2024-01-13 17:57:38,240:INFO:Set up data.
+2024-01-13 17:57:38,243:INFO:Set up index.
+2024-01-13 18:00:59,123:INFO:Initializing load_model()
+2024-01-13 18:00:59,123:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:00:59,232:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:00:59,238:INFO:Initializing predict_model()
+2024-01-13 18:00:59,238:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570a7a60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05fc0>)
+2024-01-13 18:00:59,238:INFO:Checking exceptions
+2024-01-13 18:00:59,238:INFO:Preloading libraries
+2024-01-13 18:00:59,238:INFO:Set up data.
+2024-01-13 18:00:59,241:INFO:Set up index.
+2024-01-13 18:01:10,926:INFO:Initializing load_model()
+2024-01-13 18:01:10,927:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:11,024:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:11,029:INFO:Initializing predict_model()
+2024-01-13 18:01:11,029:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728ba90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05120>)
+2024-01-13 18:01:11,029:INFO:Checking exceptions
+2024-01-13 18:01:11,029:INFO:Preloading libraries
+2024-01-13 18:01:11,029:INFO:Set up data.
+2024-01-13 18:01:11,032:INFO:Set up index.
+2024-01-13 18:01:35,329:INFO:Initializing load_model()
+2024-01-13 18:01:35,330:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:35,430:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:35,436:INFO:Initializing predict_model()
+2024-01-13 18:01:35,436:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728ba30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04c10>)
+2024-01-13 18:01:35,436:INFO:Checking exceptions
+2024-01-13 18:01:35,436:INFO:Preloading libraries
+2024-01-13 18:01:35,436:INFO:Set up data.
+2024-01-13 18:01:35,439:INFO:Set up index.
+2024-01-13 18:01:42,114:INFO:Initializing load_model()
+2024-01-13 18:01:42,114:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:42,208:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:42,213:INFO:Initializing predict_model()
+2024-01-13 18:01:42,213:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570a67a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a063b0>)
+2024-01-13 18:01:42,213:INFO:Checking exceptions
+2024-01-13 18:01:42,213:INFO:Preloading libraries
+2024-01-13 18:01:42,213:INFO:Set up data.
+2024-01-13 18:01:42,216:INFO:Set up index.
+2024-01-13 18:01:43,062:INFO:Initializing load_model()
+2024-01-13 18:01:43,062:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:43,157:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:43,163:INFO:Initializing predict_model()
+2024-01-13 18:01:43,163:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766fe50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a063b0>)
+2024-01-13 18:01:43,163:INFO:Checking exceptions
+2024-01-13 18:01:43,163:INFO:Preloading libraries
+2024-01-13 18:01:43,163:INFO:Set up data.
+2024-01-13 18:01:43,166:INFO:Set up index.
+2024-01-13 18:01:43,694:INFO:Initializing load_model()
+2024-01-13 18:01:43,694:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:43,788:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:43,793:INFO:Initializing predict_model()
+2024-01-13 18:01:43,793:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766dae0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a049d0>)
+2024-01-13 18:01:43,793:INFO:Checking exceptions
+2024-01-13 18:01:43,793:INFO:Preloading libraries
+2024-01-13 18:01:43,793:INFO:Set up data.
+2024-01-13 18:01:43,796:INFO:Set up index.
+2024-01-13 18:01:44,583:INFO:Initializing load_model()
+2024-01-13 18:01:44,583:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:44,670:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:44,675:INFO:Initializing predict_model()
+2024-01-13 18:01:44,675:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766dc30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05fc0>)
+2024-01-13 18:01:44,675:INFO:Checking exceptions
+2024-01-13 18:01:44,675:INFO:Preloading libraries
+2024-01-13 18:01:44,675:INFO:Set up data.
+2024-01-13 18:01:44,678:INFO:Set up index.
+2024-01-13 18:01:45,465:INFO:Initializing load_model()
+2024-01-13 18:01:45,465:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:45,557:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:45,563:INFO:Initializing predict_model()
+2024-01-13 18:01:45,563:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766c400>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04ca0>)
+2024-01-13 18:01:45,563:INFO:Checking exceptions
+2024-01-13 18:01:45,563:INFO:Preloading libraries
+2024-01-13 18:01:45,563:INFO:Set up data.
+2024-01-13 18:01:45,566:INFO:Set up index.
+2024-01-13 18:01:46,278:INFO:Initializing load_model()
+2024-01-13 18:01:46,278:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:01:46,369:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:01:46,375:INFO:Initializing predict_model()
+2024-01-13 18:01:46,375:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766fa90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05120>)
+2024-01-13 18:01:46,375:INFO:Checking exceptions
+2024-01-13 18:01:46,375:INFO:Preloading libraries
+2024-01-13 18:01:46,375:INFO:Set up data.
+2024-01-13 18:01:46,377:INFO:Set up index.
+2024-01-13 18:02:00,366:INFO:Initializing load_model()
+2024-01-13 18:02:00,367:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:02:00,465:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:02:00,470:INFO:Initializing predict_model()
+2024-01-13 18:02:00,470:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570a6f20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05990>)
+2024-01-13 18:02:00,470:INFO:Checking exceptions
+2024-01-13 18:02:00,470:INFO:Preloading libraries
+2024-01-13 18:02:00,470:INFO:Set up data.
+2024-01-13 18:02:00,473:INFO:Set up index.
+2024-01-13 18:05:17,744:INFO:Initializing load_model()
+2024-01-13 18:05:17,745:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:05:17,823:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:05:17,829:INFO:Initializing predict_model()
+2024-01-13 18:05:17,829:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766c6d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a06950>)
+2024-01-13 18:05:17,829:INFO:Checking exceptions
+2024-01-13 18:05:17,829:INFO:Preloading libraries
+2024-01-13 18:05:17,829:INFO:Set up data.
+2024-01-13 18:05:17,832:INFO:Set up index.
+2024-01-13 18:05:27,324:INFO:Initializing load_model()
+2024-01-13 18:05:27,324:INFO:load_model(model_name=models/ExtraTrees_Sorocaba_4970_12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:05:27,431:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:05:27,436:INFO:Initializing predict_model()
+2024-01-13 18:05:27,436:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15766cbb0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a05b40>)
+2024-01-13 18:05:27,436:INFO:Checking exceptions
+2024-01-13 18:05:27,436:INFO:Preloading libraries
+2024-01-13 18:05:27,436:INFO:Set up data.
+2024-01-13 18:05:27,439:INFO:Set up index.
+2024-01-13 18:05:38,660:INFO:Initializing load_model()
+2024-01-13 18:05:38,660:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:05:38,740:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:05:38,745:INFO:Initializing predict_model()
+2024-01-13 18:05:38,745:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x15728bb50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a04ca0>)
+2024-01-13 18:05:38,745:INFO:Checking exceptions
+2024-01-13 18:05:38,745:INFO:Preloading libraries
+2024-01-13 18:05:38,745:INFO:Set up data.
+2024-01-13 18:05:38,748:INFO:Set up index.
+2024-01-13 18:05:54,492:INFO:Initializing load_model()
+2024-01-13 18:05:54,492:INFO:load_model(model_name=models/RandomForest_Sorocaba_4970x12, platform=None, authentication=None, verbose=True)
+2024-01-13 18:05:54,568:WARNING:/Users/eduardoseity/Desktop/Arquivos/Temp/tcc-facens-2023/.venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.3.2', 'setuptools': '63.2.0', 'pycaret': '3.2.0', 'IPython': '8.20.0', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.8', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.2.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.10.1', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-01-13 18:05:54,574:INFO:Initializing predict_model()
+2024-01-13 18:05:54,574:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1570f21a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['usableAreas', 'parkingSpaces',
+                                             'suites', 'bathrooms',
+                                             'totalAreas', 'bedrooms',
+                                             'neighborhood_median',
+                                             'condominium', 'AIR_CONDITIONING',
+                                             'POOL', 'BARBECUE_GRILL'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168a063b0>)
+2024-01-13 18:05:54,574:INFO:Checking exceptions
+2024-01-13 18:05:54,574:INFO:Preloading libraries
+2024-01-13 18:05:54,574:INFO:Set up data.
+2024-01-13 18:05:54,577:INFO:Set up index.

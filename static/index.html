@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TCC Facens 2023</title>
   </head>
   <body>
@@ -21,18 +22,30 @@
           });
         });
       </script>
+      <i class="fa-solid fa-chart-area"></i>
       Área total (m²)<br>
-      <input type="range" name="totalAreas" id="totalAreas" min="70" max="1000" step="1" value="70" oninput="this.nextElementSibling.value = this.value"><output>70</output><br>
+      <input type="number" name="totalAreas" id="totalAreas" min="70" max="2000" step="1" value="70" oninput="this.nextElementSibling.value = this.value"><br>
+      <br>
+      <i class="fa-solid fa-house"></i>
       Área útil (m²)<br>
-      <input type="range" name="usableAreas" id="usableAreas" min="70" max="1000" step="1" value="70" oninput="this.nextElementSibling.value = this.value"><output>70</output><br>
+      <input type="number" name="usableAreas" id="usableAreas" min="70" max="1000" step="1" value="70" oninput="this.nextElementSibling.value = this.value"><br>
+      <br>
+      <i class="fa-solid fa-car"></i>
       Vagas<br>
-      <input type="range" name="parkingSpaces" id="parkingSpaces" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
+      <input type="range" name="parkingSpaces" id="parkingSpaces" min="0" max="5" value="0" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
+      <br>
+      <i class="fa-solid fa-toilet"></i>
       Banheiros<br>
       <input type="range" name="bathrooms" id="bathrooms" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br>
+      <br>
+      <i class="fa-solid fa-bath"></i>
       Suítes<br>
       <input type="range" name="suites" id="suites" min="0" max="5" value="0" oninput="this.nextElementSibling.value = this.value"><output>0</output><br>
+      <br>
+      <i class="fa-solid fa-bed"></i>
       Quartos<br>
       <input type="range" name="bedrooms" id="bedrooms" min="1" max="5" value="1" oninput="this.nextElementSibling.value = this.value"><output>1</output><br><br>
+      
       Bairro<br>
       <select name="neighborhood" id="neighborhood"></select><br><br>
       <script>
@@ -48,14 +61,22 @@
           });
         });
       </script>
-      <input type="checkbox" name="condominium" id="condominium" value="1"> Condomínio<br>
       <input type="hidden" name="condominium" id="condominium" value="0">
-      <input type="checkbox" name="AIR_CONDITIONING" id="AIR_CONDITIONING" value="1"> Ar-condicionado<br>
+      <label>
+        <input type="checkbox" name="condominium" id="condominium" value="1"> Condomínio<br>
+      </label>
       <input type="hidden" name="AIR_CONDITIONING" id="AIR_CONDITIONING" value="0">
-      <input type="checkbox" name="POOL" id="POOL" value="1"> Piscina<br>
+      <label>
+        <input type="checkbox" name="AIR_CONDITIONING" id="AIR_CONDITIONING" value="1"> Ar-condicionado<br>
+      </label>
       <input type="hidden" name="POOL" id="POOL" value="0">
-      <input type="checkbox" name="BARBECUE_GRILL" id="BARBECUE_GRILL" value="1"> Churrasqueira<br>
-      <input type="hidden" name="BARBECUE_GRILL" id="BARBECUE_GRILL" value="0"><br>
+      <label>
+        <input type="checkbox" name="POOL" id="POOL" value="1"> Piscina<br>
+      </label>
+      <input type="hidden" name="BARBECUE_GRILL" id="BARBECUE_GRILL" value="0">
+      <label>
+        <input type="checkbox" name="BARBECUE_GRILL" id="BARBECUE_GRILL" value="1"> Churrasqueira<br><br>
+      </label>
       <input type="submit" value="Enviar">
     </form><br>
     <span id="price">
@@ -73,7 +94,6 @@
           "model":model,
           "data":data
         };
-        console.log($('#POOL').val());
         $.ajax({
           type: 'POST',
           url: '/predict',
@@ -81,7 +101,7 @@
           contentType: 'application/json',
           dataType: 'text',
           success: (data) => {
-            document.getElementById('price').innerHTML = data;
+            document.getElementById('price').innerHTML = "Preço estimado:<br>"+data;
           },
           error: (err) => {
             console.log(err);
