@@ -38,6 +38,7 @@ def predict():
     data = body['data']
     data['neighborhood_median'] = get_neighborhood_median(data['neighborhood'])
     model = load_model('models/'+model_name)
+    print(data)
     x_data = pd.DataFrame(data,index=[0])
     x_data['totalAreas'] = pd.to_numeric(x_data['totalAreas'])
     x_data['usableAreas'] = pd.to_numeric(x_data['usableAreas'])
