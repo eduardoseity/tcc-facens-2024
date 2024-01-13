@@ -2,9 +2,6 @@
   <head>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <title>Teste</title>
-    <script>
-      var root = '18.116.65.114'
-    </script>
   </head>
   <body>
     <form id="predictForm">
@@ -13,7 +10,7 @@
       </select><br><br>
       <script>
         modelSelect = document.getElementById('model');
-        modelArray = fetch(root+'/models').then((res) => {
+        modelArray = fetch('/models').then((res) => {
           res.json().then((data) => {
             data['models'].map( (model, i) => {
               let opt = document.createElement("option");
@@ -40,7 +37,7 @@
       <select name="neighborhood" id="neighborhood"></select><br><br>
       <script>
         neighborhoodSelect = document.getElementById('neighborhood');
-        neighborhoodArray = fetch(root+'/neighborhoods').then((res) => {
+        neighborhoodArray = fetch('/neighborhoods').then((res) => {
           res.json().then((data) => {
             data['neighborhoods'].map( (neighborhood, i) => {
               let opt = document.createElement("option");
@@ -79,7 +76,7 @@
         console.log(data);
         $.ajax({
           type: 'POST',
-          url: root+'/predict',
+          url: '/predict',
           data: JSON.stringify(body),
           contentType: 'application/json',
           dataType: 'text',
