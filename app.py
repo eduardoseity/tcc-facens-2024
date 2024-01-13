@@ -3,9 +3,6 @@ from flask import request
 import pandas as pd
 import os
 from pycaret.regression import *
-import locale
-
-locale.setlocale(locale.LC_MONETARY, 'en_US')
 
 app = Flask(__name__)
 
@@ -53,4 +50,4 @@ def predict():
     x_data['POOL'] = pd.to_numeric(x_data['POOL'])
     x_data['BARBECUE_GRILL'] = pd.to_numeric(x_data['BARBECUE_GRILL'])
     y_pred = predict_model(model,x_data)['prediction_label'].values[0]
-    return locale.currency(round(y_pred,2), grouping=True)
+    return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
