@@ -46,11 +46,12 @@ def predict():
     x_data['suites'] = pd.to_numeric(x_data['suites'])
     x_data['bedrooms'] = pd.to_numeric(x_data['bedrooms'])
     x_data['condominium'] = pd.to_numeric(x_data['condominium'])
-    x_data['AIR_CONDITIONING'] = pd.to_numeric(x_data['AIR_CONDITIONING'])
+    x_data['BACKYARD'] = pd.to_numeric(x_data['BACKYARD'])
+    x_data['GYM'] = pd.to_numeric(x_data['GYM'])
     x_data['POOL'] = pd.to_numeric(x_data['POOL'])
     x_data['BARBECUE_GRILL'] = pd.to_numeric(x_data['BARBECUE_GRILL'])
     y_pred = predict_model(model,x_data)['prediction_label'].values[0]
     return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
