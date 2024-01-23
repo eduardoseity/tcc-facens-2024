@@ -29,7 +29,7 @@ def neighborhood_median():
 
 @app.route('/models')
 def models():
-    return {'models':sorted(os.listdir('models/'))}
+    return {'models':sorted(os.listdir('models/'),reverse=True)}
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -54,4 +54,4 @@ def predict():
     return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
