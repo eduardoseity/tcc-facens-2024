@@ -29,7 +29,7 @@ def neighborhood_median():
 
 @app.route('/models')
 def models():
-    return {'models':sorted(os.listdir('models/'),reverse=True)}
+    return {'models':sorted(os.listdir('models/'),reverse=False)}
 
 @app.route('/predict', methods=['POST'])
 def predict():
