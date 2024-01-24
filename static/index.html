@@ -17,10 +17,16 @@
   </head>
   <script>
     function updateData() {
-      tests = fetch('/getTestsCount').then((res) => {
-        res.json().then((data) => {
+      $.ajax({
+        type: 'GET',
+        url: '/getTestsCount',
+        contentType: 'plain/txt',
+        success: (data) => {
           document.getElementById("testsCount").innerHTML = "<i class='fa-solid fa-globe'></i> Total de testes realizados: "+data;
-        });
+        },
+        error: (err) => {
+          console.log(err);
+        }
       });
     }
   </script>

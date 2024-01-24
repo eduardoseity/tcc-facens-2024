@@ -37,6 +37,11 @@ def neighborhood_median():
 def models():
     return {'models':sorted(os.listdir('models/'),reverse=False)}
 
+@app.route('/getTestsCount')
+def get_tests_count():
+    with open('assets/tests_count.txt','r') as file:
+        return file.read()
+
 @app.route('/predict', methods=['POST'])
 def predict():
     body = request.json
@@ -60,10 +65,6 @@ def predict():
     add_test()
     return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
 
-@app.route('/getTestsCount')
-def get_tests_count():
-    with open('assets/tests_count.txt','r') as file:
-        return file.read()
 
 if __name__ == '__main__':
     app.run()
