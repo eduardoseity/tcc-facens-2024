@@ -60,7 +60,7 @@ def predict():
     add_test()
     return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
 
-@app.route('/getTestsCount', methods=['GET'])
+@app.route('/getTestsCount')
 def get_tests_count():
     with open('assets/tests_count.txt','r') as file:
         return file.read()
