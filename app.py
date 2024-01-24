@@ -11,6 +11,12 @@ df_neighborhood = pd.read_excel('assets/neighborhood_median_sorocaba.xlsx')
 def get_neighborhood_median(neighborhood:str):
     return df_neighborhood[df_neighborhood['neighborhood']==neighborhood]['neighborhood_median'].values[0]
 
+def add_test():
+    with open('assets/tests_count.txt','r') as file:
+        tests = int(file.read())
+    with open('assets/tests_count.txt','w') as file:
+        file.write(str(tests+1))
+
 @app.route('/')
 def home():
     return current_app.send_static_file('index.html')
@@ -51,7 +57,13 @@ def predict():
     x_data['POOL'] = pd.to_numeric(x_data['POOL'])
     x_data['BARBECUE_GRILL'] = pd.to_numeric(x_data['BARBECUE_GRILL'])
     y_pred = predict_model(model,x_data)['prediction_label'].values[0]
+    add_test()
     return f"R$ {round(y_pred,2):_}".replace('.',',').replace('_','.')
+
+@app.route('/getTestsCount', methods=['GET'])
+def get_tests_count():
+    with open('assets/tests_count.txt','r') as file:
+        return file.read()
 
 if __name__ == '__main__':
     app.run()
