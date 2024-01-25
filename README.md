@@ -1,64 +1,67 @@
-# "Análise de Dados Aplicada ao Mercado Imobiliário: Estratégias de Precificação e Previsão de Preços"
+![Centro Universitário Facens](https://github.com/eduardoseity/tcc-facens-2024/raw/main/images/logo-facens.webp)
 
-## 1. Introdução 🔵
-Trabalho de Conclusão de Curso de Pós Graduação em Ciência de Dados<br>
-O objetivo deste trabalho é coletar e analisar dados imobiliários para gerar insights para este mercado utilizando modelos para estimar o preço de um imóvel e prever sua valorização ao longo do tempo
+Este repositório contém todo o material utilizado para o desenvolvimento do trabalho de conclusão do curso de ***Especialização em Ciência de Dados*** realizado no Centro Universitário Facens na cidade de Sorocaba.
 
-## 2. Revisão Bibliográfica
-Conceitos fundamentais de Ciência de Dados e sua aplicação no mercado imobiliário.
+## ANÁLISE DE DADOS APLICADA AO MERCADO IMOBILIÁRIO: ESTRATÉGIAS DE PRECIFICAÇÃO E PREVISÃO DE PREÇOS
 
-Revisão de literatura sobre técnicas de análise de dados em imóveis.
+O objetivo deste trabalho é coletar e analisar dados imobiliários para gerar um modelo de Machine Learning para prever o preço de imóveis através de suas características.
 
-Discussão sobre trabalhos relacionados.
+Trabalho desenvolvido pelos alunos
+* Eduardo Seity Iseri
+* Matheus Barbosa Pedroso
 
-## 3. Coleta de Dados 🔵
-Os dados serão coletados de um site de anúncios de imóveis com filtros pré determinados.<br>
-Limpeza: Anúncios repetidos devem ser eliminados e dados faltantes devem ser analisados caso a caso<br>
-Características: Preço, quantidade de quartos, banheiros, pisos e suítes, tamanho do terreno, áreas de lazer, localização.<br><br>
-[Notebook para coleta dos dados](https://colab.research.google.com/drive/1t3QJf310JIS0ZaiGLZbzkHms9ch_See9?usp=sharing)
+Orientado pelo professor
+* Adriano Valério Santos da Silva
 
-## 4. Análise Exploratória de Dados (EDA) 🔵
-Identificação de outliers:<br>
-... Descrever como trataremos outliers ...<br>
-Dados faltantes:<br>
-... Descrever como trataremos os dados faltantes de cada característica ...<br>
+Repositório
+```bash
+tcc-facens-2024/
+├─ README.md ............................ 
+├─ app.py ............................... 
+├─ logs.log ............................. 
+├─ requirements.txt ..................... 
+├─ assets/ .............................. 
+│  ├─ neighborhood_median_sorocaba.xlsx . 
+│  └─ tests_count.txt ................... 
+├─ datasets/ ............................ 
+│  ├─ external/ ......................... 
+│  │  └─ dataset_external.xlsx .......... 
+│  └─ zap/ .............................. 
+│     ├─ amenities_dictionary.json ...... 
+│     └─ dataset_zap01.json ............. 
+├─ images/ .............................. 
+│  ├─ Fipe_zap_2023.png ................. 
+│  ├─ Pesquisa_data_zap_01.png .......... 
+│  └─ logo-facens.webp .................. 
+├─ models/ .............................. 
+│  ├─ 0.RandomForestRegressor.pkl ....... 
+│  ├─ 1.LGBMRegressor.pkl ............... 
+│  ├─ 2.ExtraTreesRegressor.pkl ......... 
+│  └─ 3.GradientBoostingRegressor.pkl ... 
+└─ static/ .............................. 
+   └─ index.html ........................ 
+``````
 
-## 5. Modelagem de Precificação
-Desenvolvimento de um modelo de precificação de imóveis.
+## Desenvolvimento
+Todo o desenvolvimento deste projeto foi realizado utilizando o *Google Colab* incluindo o scraping, para obtenção dos dados, análise exploratória, treino e teste dos modelos de Machine Learning e avaliação dos resultados<sup>[1]</sup>.
 
-Utilização de técnicas como regressão linear, regressão logística, ou algoritmos de aprendizado de máquina.
+Foram coletados milhares de anúncios de imóveis para venda localizados na cidade de Sorocaba<sup>[2]</sup>. Estes dados foram analisados e tratados antes de serem submetidos ao treinamento do modelo.
 
-Avaliação do desempenho do modelo.
+Para a otimização do modelo foram realizados diversos experimentos utilizando uma `pipeline` para a transformação dos dados e a biblioteca `PyCaret` para comparação de diversos modelos de forma fácil.
 
-## 6. Previsão de Preços
-Modelos de previsão de preços de imóveis.
+Após a validação dos modelos os 4 melhores foram exportados e foi criada uma aplicação web para testar os modelos na prática.
 
-Algoritmos de séries temporais ou modelos de aprendizado de máquina para previsão de preços futuros.
+<hr>
+<small><sup>[1]</sup> O notebook contendo os detalhes de como o projeto foi desenvolvido pode ser acessado <a href="https://colab.research.google.com/drive/1KEAhe8Em4n8qsmEGmKABn-oEZ74im-ZB?usp=sharing" target="_blank">aqui</a></small>.<br>
+<small><sup>[2]</sup> Dataset <a href="https://github.com/eduardoseity/tcc-facens-2024/raw/main/datasets/zap/dataset_zap01.json" target="_blank">https://github.com/eduardoseity/tcc-facens-2024/raw/main/datasets/zap/dataset_zap01.json</a></small>
 
-Avaliação dos modelos de previsão.
+## Aplicação
+Para rodar a aplicação localmente utilize
+>python app.py
 
-## 7. Considerações Éticas
-Discussão sobre ética na coleta e uso de dados no mercado imobiliário.
+Acesse `localhost` na porta indicada para acessar a página de teste do modelo.
 
-Medidas para garantir a privacidade dos indivíduos.
-
-## 8. Resultados e Discussão
-Apresentação dos resultados da análise e da modelagem.
-
-Discussão sobre as descobertas e o que elas implicam para o mercado imobiliário.
-
-## 9. Conclusão
-Recapitulação dos principais resultados e descobertas.
-
-Contribuição do estudo para o campo de Ciência de Dados e mercado imobiliário.
-
-## 10. Trabalhos Futuros
-Sugestões para estudos futuros, como aprimoramento dos modelos, uso de dados adicionais, etc.
-
-## 11. Referências Bibliográficas
-Lista das fontes utilizadas no trabalho.
-
-## 12. Apêndices
-Material adicional, código fonte, gráficos extras, tabelas, etc.
-
-## Ferramentas e Tecnologias:
+A aplicação foi hospedada na AWS e pode ser acessada no link abaixo<sup>[3]</sup>:
+<br><a href="http://18.116.65.114" target="_blank">http://18.116.65.114</a>
+<hr>
+<small><sup>[3]</sup> Link pode estar não disponível dependendo da data de acesso.</small>
